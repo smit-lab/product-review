@@ -1,0 +1,31 @@
+//font
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
+  $ff-heading: 'Fraunces', serif;
+  $fw-heading: 700;
+  $fw-body: 500;
+//colors
+$white: #fff;
+$creamBG:#F2EAE2;
+$gray:#6C7289;
+$lightGreen:#3D8168;
+$darkGreen: #1A4032;
+$gunmetal: #1C232B;
+//flex-container
+@mixin flex-container {
+  display: flex;
+  align-items: center;
+  //justify-content: space-between;
+}
+//grid-centering
+@mixin grid-centering {
+  display: grid;
+  place-items: center;
+}
+//button-style
+@mixin buy-btn {
+  background-color: $lightGreen;
+  color: $white;
+  width: 100%;
+  padding: rem(15) 0;
+  border-radius: rem(8);
+}

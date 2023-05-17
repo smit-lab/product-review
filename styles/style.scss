@@ -1,0 +1,126 @@
+@import "reset";
+@import "function";
+@import "globals";
+
+body {
+  background-color: $creamBG;
+  @include grid-centering;
+}
+
+.card-container {
+  max-width: rem(343);
+  height: auto;
+  margin: 0 auto;
+  background-color: $white;
+  border-radius: rem(10);
+  overflow: hidden;
+}
+
+.card-img-container {
+  object-fit: cover;
+  margin-bottom: rem(24);
+}
+
+.card-txt-container {
+  padding: rem(24);
+}
+
+.subheading {
+  display: inline-block;
+  font-size: rem(12);
+  font-weight: $fw-body;
+  line-height: 1.25;
+  letter-spacing: 5px;
+  color: $gray;
+  text-transform: uppercase;
+  margin-bottom: rem(12);
+}
+
+.heading {
+  font-size: rem(32);
+  font-family: $ff-heading;
+  color: $gunmetal;
+  font-weight: $fw-heading;
+  margin-bottom: rem(16);
+}
+
+.discription {
+  font-size: rem(14);
+  line-height: 1.64;
+  font-weight: $fw-body;
+  color: $gray;
+  margin-bottom: rem(24);
+}
+
+.price-box {
+  @include flex-container;
+  gap: rem(19);
+  margin-bottom: rem(20);
+}
+
+.dicounted-price {
+  font-size: rem(32);
+  font-weight: $fw-heading;
+  color: $lightGreen;
+  font-family: $ff-heading;
+}
+
+.original-price {
+  font-size: rem(13);
+  line-height: 1.77;
+  color: $gray;
+  font-weight: $fw-body;
+  text-decoration: line-through;
+}
+
+.add-cart-btn {
+  @include flex-container;
+  @include buy-btn;
+  justify-content: center;
+  gap: rem(11.61);
+  cursor: pointer;
+}
+
+.btn-txt {
+  font-size: rem(14);
+  font-weight: $fw-heading;
+  line-height: 1.2142;
+}
+
+.add-cart-btn:hover {
+  background-color: $darkGreen;
+}
+
+@media (min-width: 1024px) {
+  .card-container {
+    @include flex-container;
+    max-width: rem(600);
+    max-height: 100%;
+  }
+
+  .card-img-container{
+    margin-bottom: 0;
+    width: 50%;
+  }
+  
+  .card-txt-container {
+    width: 50%;
+    padding: rem(32);
+  } 
+
+  .subheading {
+    margin-bottom: rem(20);
+  }
+
+  .heading {
+    margin-bottom: rem(24);
+  }
+
+  .discription {
+    margin-bottom: rem(29);
+  }
+
+  .price-box {
+    margin-bottom: rem(30);
+  }
+}
