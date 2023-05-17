@@ -21,6 +21,11 @@ body {
   margin-bottom: rem(24);
 }
 
+.card-img {
+  width: rem(343);
+  height: rem(240);
+}
+
 .card-txt-container {
   padding: rem(24);
 }
@@ -79,6 +84,7 @@ body {
   justify-content: center;
   gap: rem(11.61);
   cursor: pointer;
+  border: none;
 }
 
 .btn-txt {
@@ -101,6 +107,11 @@ body {
   .card-img-container{
     margin-bottom: 0;
     width: 50%;
+  }
+
+  .card-img {
+    width: rem(300);
+    height: rem(450);
   }
   
   .card-txt-container {
